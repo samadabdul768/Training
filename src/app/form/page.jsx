@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 function FormPage() {
+  // hi
   return (
     <div className="bg-white flex flex-col justify-center items-center h-96 w-80 rounded-4xl">
       <h1 className= {` ${inter.className}mb-5 text-2xl font`}>Sign In With</h1>
