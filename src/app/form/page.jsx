@@ -1,22 +1,34 @@
+"use client"
 import "../styles/form.scss"
 import { Inter } from 'next/font/google'
+// import { useState } from "react";
 const inter = Inter({ subsets: ['latin'] })
+
+
 function FormPage() {
-  // hi
+  // const  [email,se]
+  // const [formData, setFormData]= useState({
+  //   email: "",
+  //   password: "",
+  // })
+  // function submitHandler(e){
+  //   e.preventDefault();
+  //   console.log("form submitted");
+  // }
   return (
     <div className="container">
-      <h1 className= {` ${inter.className}mb-5 text-2xl font`}>Sign In With</h1>
+      <h1 >Sign In With</h1>
       <form>
-        <div className="flex flex-col justify-center items-center gap-4">
+        <div className="form-content">
           <div>
-            <label className="flex flex-col">Username</label>
-            <input type="text" placeholder="Username"  className="border-2"/>
+            <label>Username</label>
+            <input type="text" placeholder="Username" />
           </div>
           <div>
-            <label className="flex flex-col">Password</label>
-            <input type="password" placeholder="Password" className="border-2"/>
+            <label >Password</label>
+            <input type="password" placeholder="Password"/>
           </div>
-          <button className="bg-black color-white text-white w-full rounded-2xl">Sign In</button>
+          <button className="button">Sign In</button>
         </div>
       </form>
     </div>
