@@ -1,4 +1,4 @@
-import FormPage from "./form/page";
+import FormPage from "./login/page";
 
 export default function Home() {
   return (
